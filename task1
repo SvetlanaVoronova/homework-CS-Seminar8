@@ -31,9 +31,9 @@ void arraySort(int[,] array)   // сортировака
             {
                 if (array[i, k] < array[i, k + 1])
                 {
-                    int temp = array[i, k + 1];
+                    int trans = array[i, k + 1];
                     array[i, k + 1] = array[i, k];
-                    array[i, k] = temp;
+                    array[i, k] = trans;
                 }
             }
         }
@@ -57,5 +57,5 @@ int[,] decrease = new int[4, 5];
 arrayRandom(decrease);
 arrayPrint(decrease);
 arraySort(decrease);
-Console.WriteLine();
+System.Console.WriteLine();
 arrayPrint(decrease);
